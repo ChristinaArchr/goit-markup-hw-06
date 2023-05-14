@@ -517,14 +517,15 @@ body {
 }
 
 .subscribe-container input {
+  width: 264px;
+  height: 40px;
+
   padding-top: 8px;
   padding-right: 16px;
   padding-bottom: 8px;
   padding-left: 16px;
-
-  /* margin: 0; */
-  width: 264px;
-  height: 40px;
+  margin: 0;
+  
 
   border: 1px solid var(--white-bg);
   border-radius: 4px;
@@ -543,21 +544,7 @@ body {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  /* padding-top: 8px;
-  padding-right: 16px;
-  padding-bottom: 8px;
-  padding-left: 16px; */
-
-  /* margin: 0;
-  width: 264px;
-  height: 40px; */
-
-  /* border: 1px solid var(--white-bg);
-  border-radius: 4px; */
-
   color: var(--white-bg);
-  /* background-color: var(--grey-bg);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
 }
 
 .subscribe-subtitle {
@@ -616,7 +603,6 @@ body {
 .subscribe-btn:focus,
 .subscribe-btn:active {
   background-color: var(--pressed-state);
-  /* border: none; */
 }
 
 .subscribe-svg {
@@ -846,10 +832,6 @@ body {
   margin-left: 0;
 }
 
-.modal-input-container {
-  position: relative;
-}
-
 .modal-container.checkbox {
   margin-top: 0;
   margin-right: 0;
@@ -876,27 +858,8 @@ body {
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-}
 
-.modal-svg {
-  position: absolute;
-
-  top: 11px;
-  left: 16px;
-
-  fill: var(--grey-bg);
-}
-
-.modal-svg.svg-anim {
-  position: absolute;
-
-  top: 8px;
-  left: 16px;
-
-  fill: var(--grey-bg);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .modal-container input:focus,
@@ -940,6 +903,35 @@ body {
 .modal-container textarea:focus,
 .modal-container textarea:active {
   border: 1px solid var(--primary-brand);
+  outline: none;
+}
+
+.modal-input-container {
+  position: relative;
+}
+
+.modal-svg {
+  position: absolute;
+
+  top: 11px;
+  left: 16px;
+
+  fill: var(--grey-bg);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-svg.svg-anim {
+  position: absolute;
+
+  top: 8px;
+  left: 16px;
+
+  fill: var(--grey-bg);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-checkbox {
@@ -1010,8 +1002,6 @@ input[type='checkbox'] {
   color: var(--primary-brand);
   text-decoration: underline;
 }
-
-/* Button */
 
 .modal-btn {
   display: block;
